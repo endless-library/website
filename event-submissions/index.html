@@ -222,12 +222,22 @@
     margin:0;
     cursor:pointer;
   }
-  input[type="radio"]{
+  input[type="radio"],
+  input[type="checkbox"]{
     width:1.2rem;
     height:1.2rem;
     margin:0;
     accent-color:var(--blue);
   }
+  .check{
+    display:flex;
+    align-items:flex-start;
+    gap:.6em;
+    margin:0;
+    cursor:pointer;
+  }
+  .check input{flex:none;margin-top:.25em}
+  .field-note{margin:8px 0 0}
 
   .times{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 
@@ -295,8 +305,6 @@
   <p>Endless Library is open to proposals for <strong>free</strong> or <strong>ticketed</strong> events/reading groups/workshops/hobby clubs/anything else you can think of. We are particularly interested in proposals that respond to the space as a library. The possibilities are endless...</p>
 
   <p>We want to keep our space as cheap as possible! The costs of running Endless Library are heavily subsidised by a core group of 20 volunteer librarians ("the shush"). The fees for hiring our space are redirected straight back into the Library; no individuals profit.</p>
-
-  <p>Please note that in order to organise an event at Endless, you will need to <strong>become a member</strong> ($10/month or $100/year; more info on this soon).</p>
 
   <h2>Fees:</h2>
   <ul>
@@ -392,6 +400,14 @@
       <div class="field">
         <label for="anything_else">Is there anything else you want to tell us?</label>
         <textarea id="anything_else" name="anything_else"></textarea>
+      </div>
+
+      <div class="field">
+        <label class="check">
+          <input type="checkbox" name="membership_acknowledged" value="Yes">
+          I understand I will have to be a member of Endless Library for my event to take place.
+        </label>
+        <p class="field-note">You are welcome to submit your event proposal without becoming a member.</p>
       </div>
 
       <div class="h-captcha" data-captcha="true"></div>

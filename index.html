@@ -166,6 +166,16 @@
   }
   .mobile-menu .nav-link:hover,
   .mobile-menu .nav-link:focus-visible{color:#fff;box-shadow:0 2px #fff}
+  .mobile-menu .panel{overflow-y:auto}
+  .menu-sep{
+    flex:none;
+    width:100%;
+    height:0;
+    margin:1vh 0 4vh;
+    border:0;
+    border-top:1.5px solid rgba(255,255,255,.45);
+  }
+  .mobile-menu .nav-link.secondary{font-size:30px;opacity:.85}
   .menu-close{
     position:absolute;
     top:30px;
@@ -618,9 +628,9 @@
   </a>
   <nav class="nav-links" aria-label="Sections">
     <a class="nav-link js-calendar" href="#footer">Calendar</a>
-    <a class="nav-link js-gallery" href="#gallery">Gallery</a>
-    <a class="nav-link" href="/event-submissions">Events EOI</a>
-    <a class="nav-link js-forum" href="https://shush.endlesslibrary.com.au">log in to Shush</a>
+    <a class="nav-link" href="https://shush.endlesslibrary.com.au/s/prod_VPL2PKu1Tzjug8">Memberships</a>
+    <a class="nav-link" href="https://shush.endlesslibrary.com.au/c/catalogue">Catalogue</a>
+    <a class="nav-link js-forum" href="https://shush.endlesslibrary.com.au">Shush</a>
   </nav>
   <button class="nav-link menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
 </header>
@@ -630,10 +640,13 @@
   <nav class="panel" aria-label="Sections">
     <button class="menu-close" type="button"><span class="sr-only">Close menu</span></button>
     <a class="nav-link js-calendar" href="#footer">Calendar</a>
-    <a class="nav-link js-gallery" href="#gallery">Gallery</a>
-    <a class="nav-link" href="/event-submissions">Events EOI</a>
+    <a class="nav-link" href="https://shush.endlesslibrary.com.au/s/prod_VPL2PKu1Tzjug8">Memberships</a>
+    <a class="nav-link" href="https://shush.endlesslibrary.com.au/c/catalogue">Catalogue</a>
     <a class="nav-link js-subscribe" href="#subscribe">Subscribe</a>
     <a class="nav-link js-forum" href="https://shush.endlesslibrary.com.au">Shush</a>
+    <hr class="menu-sep">
+    <a class="nav-link secondary js-gallery" href="#gallery">Gallery callout</a>
+    <a class="nav-link secondary" href="/event-submissions">Events EOI</a>
   </nav>
 </div>
 
@@ -646,7 +659,9 @@
       <p class="details">
         Open Saturday and Sunday, 10am – 6pm<br>
         1/292 Marrickville Road, Marrickville. Sydney<br><br>
-        <button class="text-link js-subscribe" type="button">Sign up to our newsletter</button><br>
+        <a class="text-link js-gallery" href="#gallery">Gallery callout</a><br>
+        <a class="text-link" href="/event-submissions">Events EOI</a><br><br>
+        <button class="text-link js-subscribe" type="button">Sign up to our fortnightly newsletter</button><br>
         <a href="mailto:contact@endlesslibrary.com.au">contact@endlesslibrary.com.au</a>
       </p>
     </aside>
